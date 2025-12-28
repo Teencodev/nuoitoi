@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuôi Tôi - Minh Bạch 200% (Trust me Bro!)</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="HÃY NUÔI TÔI! Tôi hứa sao kê đầy đủ mỗi ngày, minh bạch 600%, không giấu giếm (hoặc không), sao kê nhanh như cách người yêu cũ trở mặt">
+    <meta name="keywords" content="nuôi tôi, sao kê, minh bạch, từ thiện, donate, châu tinh trì, hài hước">
+    <meta name="author" content="Nuôi Tôi">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nuoitoi.me/">
+    <meta property="og:title" content="Nuôi Tôi - Minh Bạch 100% (Thật Đấy!)">
+    <meta property="og:description" content="HÃY NUÔI TÔI! Tôi hứa sao kê đầy đủ mỗi ngày, minh bạch 300%, không giấu giếm. Website hài hước về văn hóa sao kê tại Việt Nam! 😂">
+    <meta property="og:image" content="https://nuoitoi.me/img/qrcode2.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="vi_VN">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://nuoitoi.me/">
+    <meta name="twitter:title" content="Nuôi Tôi - Minh Bạch 100% (Thật Đấy!)">
+    <meta name="twitter:description" content="HÃY NUÔI TÔI! Tôi hứa sao kê đầy đủ mỗi ngày, minh bạch 300%! 😂">
+    <meta name="twitter:image" content="https://nuoitoi.me/img/qrcode2.png">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset và Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #7c3aed;
+            --primary-light: #8b5cf6;
+            --primary-dark: #5b21b6;
+            --secondary-color: #10b981;
+            --accent-color: #f59e0b;
+            --danger-color: #ef4444;
+            --light-color: #f8fafc;
+            --dark-color: #1e293b;
+            --gray-color: #64748b;
+            --light-gray: #e2e8f0;
+            --border-radius: 16px;
+            --box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            --box-shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #fefefe;
+            overflow-x: hidden;
+            padding-top: 80px;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header hiện đại */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+            padding: 15px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-icon {
+            font-size: 1.8rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .logo-text {
+            font-size: 1.6rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+        
+        .slogan {
+            font-size: 0.9rem;
+            color: var(--gray-color);
+            font-style: italic;
+            max-width: 300px;
+            text-align: right;
+        }
+        
+        /* Hero Section hiện đại */
+        .hero {
+            padding: 80px 0 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .hero-text {
+            max-width: 550px;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            box-shadow: 0 6px 15px rgba(124, 58, 237, 0.3);
+        }
+        
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .hero-title span {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        
+        .hero-description {
+            font-size: 1.1rem;
+            color: var(--gray-color);
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+        
+        .hero-actions {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            color: white;
+            box-shadow: 0 6px 20px rgba(124, 58, 237, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(124, 58, 237, 0.4);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-light);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(124, 58, 237, 0.05);
+            transform: translateY(-3px);
+        }
+        
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hero-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--box-shadow-hover);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
+        }
+        
+        .hero-card-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+        
+        .hero-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            background: var(--light-color);
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--gray-color);
+        }
+        
+        /* Donation Counter hiện đại */
+        .donation-counter {
+            margin: 60px 0;
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--box-shadow);
+            border: 1px solid var(--light-gray);
+        }
+        
+        .counter-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .counter-title {
+            font-size: 1.8rem;
+            color: var(--dark-color);
+        }
+        
+        .counter-refresh {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gray-color);
+            font-size: 0.9rem;
+        }
+        
+        .counter-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .counter-card {
+            background: var(--light-color);
+            border-radius: 12px;
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .counter-icon {
+            font-size: 2.5rem;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .counter-details {
+            flex: 1;
+        }
+        
+        .counter-label {
+            font-size: 0.9rem;
+            color: var(--gray-color);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .counter-amount {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--dark-color);
+            font-family: 'Courier New', monospace;
+        }
+        
+        .counter-subtitle {
+            font-size: 0.9rem;
+            color: var(--gray-color);
+        }
+        
+        .expense-summary {
+            background: var(--light-color);
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 20px;
+        }
+        
+        .expense-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .expense-row:last-child {
+            border-bottom: none;
+            font-weight: 700;
+        }
+        
+        .expense-label {
+            font-size: 1rem;
+            color: var(--dark-color);
+        }
+        
+        .expense-value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .expense-value.income {
+            color: var(--secondary-color);
+        }
+        
+        .expense-value.expense {
+            color: var(--danger-color);
+        }
+        
+        .progress-section {
+            margin-top: 30px;
+        }
+        
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 16px;
+            background: var(--light-gray);
+            border-radius: 50px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
+            border-radius: 50px;
+            width: 36%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .progress-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            animation: shimmer 2s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(400%); }
+        }
+        
+        .progress-text {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: var(--gray-color);
+        }
+        
+        /* Features Section hiện đại */
+        .section {
+            margin: 80px 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--gray-color);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--box-shadow);
+            border: 1px solid var(--light-gray);
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--box-shadow-hover);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(139, 92, 246, 0.1));
+            color: var(--primary-color);
+        }
+        
+        .feature-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .feature-description {
+            color: var(--gray-color);
+            line-height: 1.6;
+        }
+        
+        /* Comparison Table hiện đại */
+        .comparison-section {
+            background: var(--light-color);
+            border-radius: var(--border-radius);
+            padding: 50px 30px;
+            margin: 80px 0;
+        }
+        
+        .comparison-table {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .comparison-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 18px 25px;
+            border-bottom: 1px solid var(--light-gray);
+            align-items: center;
+        }
+        
+        .comparison-row:first-child {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            color: white;
+            font-weight: 600;
+        }
+        
+        .comparison-row:nth-child(even) {
+            background: rgba(248, 250, 252, 0.5);
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        .badge-success {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--secondary-color);
+        }
+        
+        .badge-danger {
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--danger-color);
+        }
+        
+        /* Transparency Section hiện đại */
+        .transparency-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .chart-container {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--box-shadow);
+            text-align: center;
+        }
+        
+        .chart-title {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+        
+        .chart {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        
+        .breakdown-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .breakdown-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        
+        .breakdown-item:hover {
+            transform: translateX(5px);
+            box-shadow: var(--box-shadow-hover);
+        }
+        
+        .breakdown-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .breakdown-details {
+            flex: 1;
+        }
+        
+        .breakdown-title {
+            font-weight: 600;
+            color: var(--dark-color);
+            margin-bottom: 5px;
+        }
+        
+        .breakdown-description {
+            font-size: 0.9rem;
+            color: var(--gray-color);
+        }
+        
+        .breakdown-percentage {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--dark-color);
+        }
+        
+        /* QR Section hiện đại với 2 QR code */
+        .qr-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            border-radius: var(--border-radius);
+            padding: 60px 30px;
+            margin: 80px 0;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .qr-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            opacity: 0.3;
+            z-index: 0;
+        }
+        
+        .qr-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .qr-title {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .qr-description {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .qr-codes-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .qr-codes-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        
+        .qr-code-box {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+        }
+        
+        .qr-code-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+        
+        .qr-code-title {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .qr-code-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .qr-code-note {
+            color: var(--gray-color);
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        
+        .qr-note {
+            font-size: 1.1rem;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+        
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: white;
+            color: var(--primary-color);
+            padding: 18px 35px;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Video Section hiện đại */
+        .video-section {
+            margin: 80px 0;
+        }
+        
+        .video-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow-hover);
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            background: #000;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Message Section hiện đại */
+        .message-section {
+            margin: 80px 0;
+        }
+        
+        .message-card {
+            background: linear-gradient(135deg, #fdf2f8 0%, #f0f9ff 100%);
+            border-radius: var(--border-radius);
+            padding: 50px;
+            box-shadow: var(--box-shadow);
+            border-left: 6px solid var(--primary-color);
+        }
+        
+        .message-title {
+            font-size: 2rem;
+            color: var(--dark-color);
+            margin-bottom: 25px;
+        }
+        
+        .message-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--dark-color);
+        }
+        
+        .message-content p {
+            margin-bottom: 20px;
+        }
+        
+        .message-content strong {
+            color: var(--primary-color);
+        }
+        
+        .message-content em {
+            display: block;
+            margin-top: 25px;
+            font-style: italic;
+            color: var(--gray-color);
+            font-size: 1rem;
+        }
+        
+        /* Disclaimer hiện đại */
+        .disclaimer {
+            background: var(--light-color);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin-top: 60px;
+            text-align: center;
+            border-top: 3px solid var(--primary-light);
+        }
+        
+        .disclaimer-title {
+            font-size: 1.2rem;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+        }
+        
+        .disclaimer-text {
+            color: var(--gray-color);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gray-color);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+            
+            .hero-text {
+                text-align: center;
+                max-width: 100%;
+            }
+            
+            .hero-actions {
+                justify-content: center;
+            }
+            
+            .transparency-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .slogan {
+                text-align: center;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .counter-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-row {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            
+            .comparison-row:first-child {
+                display: none;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .message-card {
+                padding: 30px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .counter-card {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            
+            .breakdown-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            
+            .breakdown-color {
+                margin-right: 0;
+            }
+            
+            .qr-title {
+                font-size: 2rem;
+            }
+        }
+        
+        /* Animation cho các phần tử */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <!-- Header hiện đại -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <div class="logo-text">NuôiTôi.Me</div>
+                </div>
+                <div class="slogan">
+                    <strong>HÃY NUÔI TÔI.</strong><br>
+                    Tôi sẽ đớp hết đấy :)) Sao kê tùy hứng
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section hiện đại -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <span class="hero-badge">Minh bạch 36%</span>
+                    <h1 class="hero-title">
+                        Ủng hộ tôi,<br>
+                        <span>không hối hận</span>
+                    </h1>
+                    <p class="hero-description">
+                        Mọi đồng tiền bạn gửi đều được sao kê công khai (hoặc là không)
+                        Không lấp liếm, không mập mờ, không biến mất bí ẩn, nhanh như cách người yêu cũ trở mặt
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#qr-section" class="btn btn-primary">
+                            <i class="fas fa-heart"></i> Ủng hộ ngay
+                        </a>
+                        <a href="#transparency" class="btn btn-secondary">
+                            <i class="fas fa-chart-bar"></i> Xem sao kê
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in delay-1">
+                    <div class="hero-card">
+                        <h3 class="hero-card-title">Thống kê hiện tại</h3>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">36+</div>
+                                <div class="stat-label">Người ủng hộ</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">360%</div>
+                                <div class="stat-label">Minh bạch</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">24/7</div>
+                                <div class="stat-label">Sao kê live</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">99%</div>
+                                <div class="stat-label">Hài lòng</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Counter hiện đại -->
+    <div class="container">
+        <div class="donation-counter fade-in delay-2">
+            <div class="counter-header">
+                <h3 class="counter-title">📊 Tổng quan tài chính</h3>
+                <div class="counter-refresh">
+                    <i class="fas fa-sync-alt"></i>
+                    Cập nhật tự động
+                </div>
+            </div>
+            
+            <div class="counter-content">
+                <div class="counter-card">
+                    <div class="counter-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <div class="counter-details">
+                        <div class="counter-label">Tổng đã nhận được</div>
+                        <div class="counter-amount" id="totalAmount">
+                            <span class="loading-spinner">⏳</span>
+                            <span class="amount-value" style="display: none;">0 đ</span>
+                        </div>
+                        <div class="counter-subtitle">Từ <span id="transactionCount">0</span> lượt donate</div>
+                    </div>
+                </div>
+                
+                <div class="counter-card">
+                    <div class="counter-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="counter-details">
+                        <div class="counter-label">Chi tiêu tháng này</div>
+                        <div class="counter-amount" id="monthlySpent">
+                            <span class="loading-spinner">⏳</span>
+                            <span class="amount-value" style="display: none;">0 đ</span>
+                        </div>
+                        <div class="counter-subtitle">Mục tiêu: <span id="monthlyGoal">14,000,000,000</span> đ</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="expense-summary">
+                <div class="expense-row">
+                    <span class="expense-label">Tổng thu nhập:</span>
+                    <span class="expense-value income" id="incomeAmount">0 đ</span>
+                </div>
+                <div class="expense-row">
+                    <span class="expense-label">Tổng chi tiêu:</span>
+                    <span class="expense-value expense" id="spentAmount">0 đ</span>
+                </div>
+                <div class="expense-row">
+                    <span class="expense-label">Số dư hiện tại:</span>
+                    <span class="expense-value" id="remainingAmount">0 đ</span>
+                </div>
+            </div>
+            
+            <div class="progress-section">
+                <div class="progress-header">
+                    <span>Tiến độ tháng này</span>
+                    <span><span id="progressPercent">36</span>%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill" style="width: 36%"></div>
+                </div>
+                <div class="progress-text">
+                    <span>Đã đạt</span>
+                    <span class="amount"><span id="currentAmount">0</span> / <span id="monthlyGoalText">14,000,000,000</span> đ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section hiện đại -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">🎯 Tại sao nên nuôi tôi?</h2>
+                <p class="section-subtitle">
+                    Không phải ai cũng xứng đáng được ủng hộ. Nhưng tôi thì có.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card fade-in delay-1">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="feature-title">Minh bạch tuyệt đối</h3>
+                    <p class="feature-description">Mọi giao dịch đều được ghi nhận và công khai. Bạn có thể kiểm tra bất cứ lúc nào (hoặc không).</p>
+                </div>
+                
+                <div class="feature-card fade-in delay-2">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="feature-title">Cập nhật hàng ngày</h3>
+                    <p class="feature-description">Sao kê được cập nhật tự động mỗi ngày lúc 6h sáng. Không delay, không chậm trễ (hoặc không).</p>
+                </div>
+                
+                <div class="feature-card fade-in delay-1">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3 class="feature-title">Biên lai tự động</h3>
+                    <p class="feature-description">Sau khi donate, bạn sẽ nhận được email xác nhận cùng biên lai chi tiết (bị trừ tiền tài khoản).</p>
+                </div>
+                
+                <div class="feature-card fade-in delay-2">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-title">Hỗ trợ 24/7</h3>
+                    <p class="feature-description">Có thắc mắc? Liên hệ bất cứ lúc nào. Kể cả 3 giờ sáng (thích thì trả lời không thì thôi).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section hiện đại -->
+    <section class="comparison-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">📊 So sánh với "người khác"</h2>
+                <p class="section-subtitle">
+                    Nhìn là biết ai đáng tin hơn rồi!
+                </p>
+            </div>
+            
+            <div class="comparison-table">
+                <div class="comparison-row">
+                    <div>Tiêu chí</div>
+                    <div>Nuôi Tôi</div>
+                    <div>Người khác</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div>Sao kê chi tiêu</div>
+                    <div><span class="badge badge-success">✅ Hàng ngày</span></div>
+                    <div><span class="badge badge-danger">❌ "Sẽ có sau"</span></div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div>Độ minh bạch</div>
+                    <div><span class="badge badge-success">✅ 100%</span></div>
+                    <div><span class="badge badge-danger">❌ "Tin tôi đi"</span></div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div>Mục đích sử dụng</div>
+                    <div><span class="badge badge-success">✅ Công khai rõ ràng</span></div>
+                    <div><span class="badge badge-danger">❌ "Từ thiện"</span></div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div>Phản hồi</div>
+                    <div><span class="badge badge-success">✅ Trong ngày</span></div>
+                    <div><span class="badge badge-danger">❌ Không liên lạc được</span></div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div>Tốc độ</div>
+                    <div><span class="badge badge-success">✅ Phải check</span></div>
+                    <div><span class="badge badge-danger">❌ tingTing</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparency Section hiện đại -->
+    <section class="section" id="transparency">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">📈 Tiền của bạn đi đâu?</h2>
+                <p class="section-subtitle">
+                    Chi tiết phân bổ chi tiêu hàng tháng
+                </p>
+            </div>
+            
+            <div class="transparency-content">
+                <div class="chart-container fade-in delay-1">
+                    <h3 class="chart-title">Phân bổ chi tiêu</h3>
+                    <div class="chart">
+                        <div style="width: 250px; height: 250px; margin: 0 auto; position: relative;">
+                            <div style="width: 100%; height: 100%; border-radius: 50%; 
+                                      background: conic-gradient(
+                                          #2563eb 0% 38%,
+                                          #10b981 38% 58%,
+                                          #f59e0b 58% 73%,
+                                          #6b7280 73% 83%,
+                                          #8b5cf6 83% 100%
+                                      );">
+                            </div>
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+                                      background: white; width: 120px; height: 120px; border-radius: 50%; 
+                                      display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.4rem; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                                100%
+                            </div>
+                        </div>
+                    </div>
+                    <p style="margin-top: 20px; color: var(--gray-color); font-size: 0.9rem;">
+                        <i class="fas fa-sync-alt"></i> Cập nhật lần cuối: Hôm nay, 07:00 AM
+                    </p>
+                </div>
+                
+                <div class="breakdown-list">
+                    <div class="breakdown-item fade-in delay-1">
+                        <div class="breakdown-color" style="background: #2563eb;"></div>
+                        <div class="breakdown-details">
+                            <div class="breakdown-title">Ăn uống</div>
+                            <div class="breakdown-description">Cơm, phở, bún, mì...</div>
+                        </div>
+                        <div class="breakdown-percentage">36%</div>
+                    </div>
+                    
+                    <div class="breakdown-item fade-in delay-2">
+                        <div class="breakdown-color" style="background: #10b981;"></div>
+                        <div class="breakdown-details">
+                            <div class="breakdown-title">Điện, nước, internet</div>
+                            <div class="breakdown-description">Bills hàng tháng</div>
+                        </div>
+                        <div class="breakdown-percentage">36%</div>
+                    </div>
+                    
+                    <div class="breakdown-item fade-in delay-3">
+                        <div class="breakdown-color" style="background: #f59e0b;"></div>
+                        <div class="breakdown-details">
+                            <div class="breakdown-title">Cà phê</div>
+                            <div class="breakdown-description">Nhiên liệu làm việc</div>
+                        </div>
+                        <div class="breakdown-percentage">3.6%</div>
+                    </div>
+                    
+                    <div class="breakdown-item fade-in delay-2">
+                        <div class="breakdown-color" style="background: #6b7280;"></div>
+                        <div class="breakdown-details">
+                            <div class="breakdown-title">Học tập</div>
+                            <div class="breakdown-description">Khóa học, sách vở</div>
+                        </div>
+                        <div class="breakdown-percentage">3.6%</div>
+                    </div>
+                    
+                    <div class="breakdown-item fade-in delay-3">
+                        <div class="breakdown-color" style="background: #8b5cf6;"></div>
+                        <div class="breakdown-details">
+                            <div class="breakdown-title">Giải trí</div>
+                            <div class="breakdown-description">Dự phòng, giải trí (karaoke, massage)</div>
+                        </div>
+                        <div class="breakdown-percentage">20%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QR Section hiện đại với 2 QR code -->
+    <section class="qr-section" id="qr-section">
+        <div class="container">
+            <div class="qr-content fade-in">
+                <h2 class="qr-title">💳 DONATE NGAY ĐI, ĐỌC ÍT THÔI</h2>
+                <p class="qr-description">
+                    Quét mã QR này để nuôi tôi (và nhận bản sao kê ngay lập tức!) 
+                    hoặc vào link này <a href="https://buymeacoffee.com/nuoitoi.me" target="_blank" style="color: white; text-decoration: underline;">https://buymeacoffee.com/nuoitoi.me</a>
+                </p>
+                
+                <div class="qr-codes-container">
+                    <!-- QR Code 1 -->
+                    <div class="qr-code-box fade-in delay-1">
+                        <h3 class="qr-code-title">QR Code chính</h3>
+                        <a href="https://buymeacoffee.com/nuoitoi.me" target="_blank">
+                            <img src="./img/qr-code.png" alt="QR Code ủng hộ chính" class="qr-code-image">
+                        </a>
+                        <p>Quét mã để ủng hộ qua Buy Me a Coffee</p>
+                        <p class="qr-code-note">Nhận email xác nhận ngay!</p>
+                    </div>
+                    
+                    <!-- QR Code 2 -->
+                    <div class="qr-code-box fade-in delay-2">
+                        <h3 class="qr-code-title">QR Code phụ</h3>
+                        <a href="#" target="_blank">
+                            <img src="./img/qrcode2.png" alt="QR Code ủng hộ phụ" class="qr-code-image">
+                        </a>
+                        <p>Quét mã để ủng hộ trực tiếp</p>
+                        <p class="qr-code-note">Ủng hộ nhanh, tiện lợi!</p>
+                    </div>
+                </div>
+                
+                <div class="qr-note">
+                    ⚡ Chuyển xong là có mail tự động! ⚡
+                </div>
+                
+                <button class="cta-button" onclick="window.open('https://buymeacoffee.com/nuoitoi.me', '_blank')">
+                    <i class="fas fa-gift"></i> TÔI MUỐN NUÔI BẠN!
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section hiện đại -->
+    <section class="video-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🎬 "Tôi Nuôi Cô!" - Châu Tinh Trì</h2>
+                <p class="section-subtitle">
+                    Cảm hứng bất tận cho dự án này
+                </p>
+            </div>
+            
+            <div class="video-wrapper">
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/aBAq6NWlEAk" 
+                        title="Tôi nuôi cô - Châu Tinh Trì" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Section hiện đại -->
+    <section class="message-section fade-in">
+        <div class="container">
+            <div class="message-card">
+                <h3 class="message-title">🎤 Lời Nhắn Từ Trái Tim</h3>
+                <div class="message-content">
+                    <p>
+                        Trong thời đại mà <strong>"từ thiện"</strong> đã trở thành từ nhạy cảm, 
+                        Tôi xin khẳng định: <strong>HÃY NUÔI TÔI!</strong>
+                    </p>
+                    <p>
+                        Tôi nghèo, tôi cần tiền, nhưng tôi KHÔNG MẤT LƯƠNG TÂM! 
+                        Mỗi đồng tiền các bạn gửi, tôi sẽ chi tiêu rõ ràng, 
+                        minh bạch như bụng đói của tôi vậy! 😭
+                    </p>
+                    <em>
+                        P/S: Tôi hứa sẽ không mua xe hơi bằng tiền donate. 
+                        Vì... tôi chưa có bằng lái! 🚗❌<br><br>
+                        Tôi hứa sẽ không mua vàng bằng tiền donate. 
+                        Vì... tôi ghét màu vàng❌<br><br>
+                        Tôi hứa sẽ không đi du lịch bằng tiền donate. 
+                        Vì tôi là người hướng nội -_- ❌
+                    </em>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer hiện đại -->
+    <footer class="container">
+        <div class="disclaimer fade-in">
+            <h4 class="disclaimer-title">⚠️ DISCLAIMER</h4>
+            <p class="disclaimer-text">
+                Đây là trang web mang tính chất <strong>HÀI HƯỚC</strong> 
+                Mọi nội dung đều mang tính giải trí, không nhằm mục đích xúc phạm hay chỉ trích bất kỳ cá nhân/tổ chức nào.
+            </p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <span>Địa chỉ: <a href="https://nuoitoi.me" target="_blank">nuoitoi.me</a></span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Liên hệ: hoa.tranvan1120@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-code-branch"></i>
+                    <span>Bản gốc: <a href="https://nuoitoi.com" target="_blank">nuoitoi.com</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript cho hiệu ứng và tương tác
+        
+        // Animation khi cuộn trang
+        document.addEventListener('DOMContentLoaded', function() {
+            // Thêm lớp fade-in cho các phần tử khi cuộn
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInOnScroll = function() {
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        element.classList.add('active');
+                    }
+                });
+            };
+            
+            // Kiểm tra ngay khi load trang
+            fadeInOnScroll();
+            
+            // Thêm sự kiện scroll
+            window.addEventListener('scroll', fadeInOnScroll);
+            
+            // Giả lập dữ liệu donation counter
+            setTimeout(() => {
+                document.getElementById('totalAmount').innerHTML = '<span class="amount-value">36,000,000 đ</span>';
+                document.getElementById('transactionCount').textContent = '36';
+                document.getElementById('monthlySpent').innerHTML = '<span class="amount-value">5,040,000 đ</span>';
+                document.getElementById('incomeAmount').textContent = '36,000,000 đ';
+                document.getElementById('spentAmount').textContent = '14,400,000 đ';
+                document.getElementById('remainingAmount').textContent = '21,600,000 đ';
+                document.getElementById('currentAmount').textContent = '5,040,000';
+                document.getElementById('progressPercent').textContent = '36';
+                document.getElementById('progressFill').style.width = '36%';
+            }, 1000);
+            
+            // Hiệu ứng cho các nút
+            const buttons = document.querySelectorAll('.btn, .cta-button');
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px)';
+                });
+                
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // Hiệu ứng cho các card
+            const cards = document.querySelectorAll('.feature-card, .breakdown-item, .qr-code-box');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // Hiệu ứng khi click vào QR code
+            const qrCodes = document.querySelectorAll('.qr-code-box');
+            qrCodes.forEach(qrCode => {
+                qrCode.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'IMG') {
+                        this.style.transform = 'scale(0.95)';
+                        setTimeout(() => {
+                            this.style.transform = 'translateY(-10px)';
+                        }, 150);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
